@@ -22,10 +22,10 @@ html{
     --ff-h4: Martian;
     --ff-p: Cinzel;
 
-    --fc-h1: black;
-    --fc-h3: red;
-    --fc-h4: grey;
-    --fc-p: blue;
+    --fc-h1: rgb(67, 8, 8);
+    --fc-h3: rgb(22, 135, 97);
+    --fc-h4: rgb(51, 32, 32);
+    --fc-p: rgb(37, 37, 98);
 
     --margin-h1: 0 0 10px 0;
     --margin-h3: 0 0 8px 0;
