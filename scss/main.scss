@@ -1,0 +1,48 @@
+@import "config";
+
+@mixin flexCenter($direction){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+body{
+    @include flexCenter(row);
+    min-height: 100vh;
+    background-color: map-get($colors, secondary )
+}
+.card{
+    @include flexCenter(column);
+    gap: 2.4rem;
+    border-radius: 2rem;
+    width: 100%;
+    max-width: 32rem;
+    padding: 1.6rem;
+    padding-bottom: 4rem;
+    background-color: map-get($colors, primary );
+
+    #{&}__image{
+        width: 100%;
+        border-radius: 1rem;
+    }
+
+    #{&}__content{
+        text-align: center;
+
+        & .heding{
+            color: map-get($colors, neutral-2 );
+            font-weight: $font-weight-700;
+            font-size: $font-size-big;
+            margin-bottom: 1.6rem;
+
+            line-height: 2.7rem;
+        }
+
+        & .paragraph{
+            font-size: $font-size-medium;
+            margin: 0 1rem;
+            line-height: 1.9rem;
+            letter-spacing: 0.02rem;
+        }
+    }
+}

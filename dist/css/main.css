@@ -1,0 +1,89 @@
+*, ::before, ::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+html {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Outfit', 'sans-serif';
+  font-weight: 400;
+  color: #7b879d;
+}
+
+img {
+  display: block;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-height: 100vh;
+  background-color: #d6e2f0;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.4rem;
+  border-radius: 2rem;
+  width: 100%;
+  max-width: 32rem;
+  padding: 1.6rem;
+  padding-bottom: 4rem;
+  background-color: white;
+}
+
+.card .card__image {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.card .card__content {
+  text-align: center;
+}
+
+.card .card__content .heding {
+  color: #1f3251;
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin-bottom: 1.6rem;
+  line-height: 2.7rem;
+}
+
+.card .card__content .paragraph {
+  font-size: 1.5rem;
+  margin: 0 1rem;
+  line-height: 1.9rem;
+  letter-spacing: 0.02rem;
+}
+/*# sourceMappingURL=main.css.map */

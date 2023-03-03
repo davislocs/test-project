@@ -1,0 +1,36 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+$colors: (
+    "primary": hsl(0, 0%, 100%),
+    "secondary": hsl(212, 45%, 89%),
+    "neutral": hsl(220, 15%, 55%),
+    "neutral-2": hsl(218, 44%, 22%)
+);
+
+$font-weight-400: 400;
+$font-weight-700: 700;
+
+$font-size-medium: 1.5rem;
+$font-size-big: 2.2rem;
+
+body,
+html{
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Outfit', 'sans-serif';
+    font-weight: $font-weight-400;
+    color: map-get($colors, neutral);
+}
+img{
+    display: block;
+}
+
+
+
